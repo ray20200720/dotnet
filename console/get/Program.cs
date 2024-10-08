@@ -6,7 +6,7 @@ public class Program
 {
     public static async Task Main(string[] args)
     {
-        var url = "https://example.com/api/endpoint";
+        var url = "https://github.com/ray20200720/dotnet";
         string filePath = "response.html";
 
         using (HttpClient client = new HttpClient())
@@ -24,7 +24,7 @@ public class Program
             }
             catch (HttpRequestException e)
             {
-                Console.WriteLine($"Exception: {ex.Message}");
+                Console.WriteLine($"Exception: {e.Message}");
             }
         }
     }
